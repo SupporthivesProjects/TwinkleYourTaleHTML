@@ -1,0 +1,419 @@
+.nav-link{
+    color: var(--brand-navy, #16305B);
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 30.8px */
+    padding: 8px !important;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+.btn-login{
+    border-radius: var(--radius-s, 4px);
+    background: var(--brand-rust, #C83A14);
+    display: flex;
+    height: 64px;
+    padding: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+ .btn-border-dots{
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+    color: var(--Base-White, #FFF);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    border-radius: var(--radius-xs, 2px);
+    border: 2px dashed var(--brand-gold-light, #ECAD47);
+}
+ .btn-tokens{
+    display: flex;
+    padding: 8px 24px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color: var(--brand-navy, #16305B);
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    border: 2px solid var(--brand-line-16, rgba(22, 48, 91, 0.16));
+    border-radius: 0px;
+}
+.dropdown-toggle-cur{
+    display: flex;
+    padding: 8px 16px 8px 24px;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    border: 0px;
+    background: url(../img/chevron.svg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 10px;
+    height: 6px;
+}
+.logo-mo-div{
+    display: flex;
+    align-items: center;
+}
+.dropdown-toggle{
+    display: flex;
+    padding: 8px 16px 8px 24px;
+    align-items: center;
+    gap: 8px;
+}
+.dropdown-menu.show{
+    border-radius: var(--radius-m, 8px);
+    border: 1px solid var(--brand-line-16, rgba(22, 48, 91, 0.16));
+    background: var(--brand-paper-textured, url(<path-to-image>) lightgray 50% / cover no-repeat);
+    box-shadow: 0 5px 12px 0 rgba(40, 28, 14, 0.12);
+}
+.dropdown-menu.show{
+    background: url(../img/dropdown.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 8px 0px;
+    width: 240px;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.dropdown-ite
+.dropdown-menu li{
+    display: flex;
+    padding: 8px 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ .dropdown-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+}
+.dropdown-item  span{
+    color: var(--brand-navy, #16305B);
+    /* body / small */
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+}
+.dropdown-item.active span{
+    color: var(--brand-rust, #C83A14);
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+}
+.dropdown-item p{
+    color: var(--brand-navy-soft-55, rgba(22, 48, 91, 0.55));
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+    margin-bottom: 0px;
+}
+.ifuserlloginDetails{
+    display: none;
+}
+.dropdown-toggle.show::after {
+    transform: rotate(180deg);
+}
+.navbar{
+    padding: 40px 0px;
+}
+.btn-login:hover{
+    border-radius: var(--radius-s, 4px);
+    background: var(--brand-rust, #C83A14);
+}
+.btn-login:hover .btn-border-dots{
+    border-radius: var(--radius-xs, 2px);
+    border: 2px solid var(--brand-gold-light, #ECAD47);
+    background: var(--brand-gold-light, #ECAD47);
+}
+.scrolled .navbar{
+    background: var(--brand-cream, #FBF3E0);
+
+}
+.cart-mo-top-btn{
+    display: none;
+}
+/* ---------------checkout------------------ */
+.checkout-complete{
+    padding: 216px 0px 138px;
+}
+
+.payment-complete{
+    display: flex;
+    width: 720px;
+    max-width: 100%;
+    padding: 56px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    border-radius: var(--radius-m, 8px);
+    background: url(../img/outcome.png) no-repeat ;
+    box-shadow: 0 18px 44px -10px rgba(0, 0, 0, 0.30);
+    background-size: cover;
+    margin: auto;
+}
+.payment-complete h1{
+    color: var(--brand-navy, #16305B);
+    font-family: Anton;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.payment-complete p{
+    color: var(--brand-ink, #31486E);
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 27.9px */
+    margin-bottom: 0px;
+}
+.order-checkout{
+    width: 100%;
+}
+.order-main{
+    display: flex;
+    padding: 16px 0;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-top: 1px solid var(--brand-line-16, rgba(22, 48, 91, 0.16));
+    width: 100%;
+}
+.order-main h6{
+    color: var(--brand-navy-soft-55, rgba(22, 48, 91, 0.55));
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+    margin-bottom: 0px;
+}
+.order-main h6:last-child{
+    color: var(--brand-navy, #16305B);
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 27.9px */
+    margin-bottom: 0px;
+}
+.order-main:last-child{
+    border-bottom: 1px solid var(--brand-line-16, rgba(22, 48, 91, 0.16));
+}
+.btn-warp .btn-white{ 
+    display: flex;
+    padding: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    text-decoration: none;
+    border-radius: var(--radius-s, 4px);
+    border: 1px solid var(--brand-navy, #16305B);
+    background: var(--brand-cream, #FBF3E0);
+
+}
+.btn-warp .btn-white span{
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color: var(--brand-navy, #16305B);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none;
+    border-radius: var(--radius-xs, 2px);
+    border: 2px dashed var(--brand-gold-light, #ECAD47);
+}
+
+.btn-warp .btn-orange{ 
+    display: flex;
+    padding: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    text-decoration: none;
+    border-radius: var(--radius-s, 4px);
+    border: 0px solid var(--brand-navy, #16305B);
+    background: var(--brand-cream, #FBF3E0);
+    border-radius: var(--radius-s, 4px);
+    background: var(--brand-rust, #C83A14);
+
+}
+.payment-complete .btn-warp{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+.btn-warp .btn-orange span{
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color: var(--Base-White, #FFF);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 23.8px */
+    text-decoration: none;
+    border-radius: var(--radius-xs, 2px);
+    border: 2px dashed var(--brand-gold-light, #ECAD47);
+}
+.payment-complete .btn-warp .btn{
+    transition: all .6s;
+}
+.payment-complete .btn-warp .btn-white:hover{
+    border-radius: var(--radius-s, 4px);
+    background: var(--brand-navy, #16305B);
+}
+.payment-complete .btn-warp .btn-white:hover span{
+    border-radius: var(--radius-xs, 2px);
+    border: 2px solid var(--brand-cream, #FBF3E0);
+    background: var(--brand-cream, #FBF3E0);
+}
+
+.payment-complete .btn-warp .btn-orange:hover{
+    border-radius: var(--radius-s, 4px);
+    background: var(--brand-rust, #C83A14);
+}
+.payment-complete .btn-warp .btn-orange:hover span{
+    border-radius: var(--radius-xs, 2px);
+    border: 2px solid var(--brand-gold-light, #ECAD47);
+    background: var(--brand-gold-light, #ECAD47);
+}
+/* ------------------footer--------------- */
+.footer-menu-list h6{
+    color: var(--brand-gold, #E9B04A);
+    font-family: Nunito;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1.98px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+footer{
+    background: var(--brand-navy, #16305B);
+}
+.footer-bottom{
+    border-top: 1px solid var(--brand-cream-line-20, rgba(251, 243, 224, 0.20));
+    padding: 24px 0px;
+}
+.col-footer-one{
+    padding: 96px 0px 72px;
+}
+.footer-logo img{
+    margin-bottom: 8px;
+}
+.footer-menu-list ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px;
+}
+.footer-link{
+    display: flex;
+    align-items: flex-start;
+    gap: 96px;
+}
+.footer-menu-list li{
+    margin-bottom: 16px;
+}
+.footer-menu-list li:last-child{
+    margin-bottom: 0px;
+}
+.footer-menu-list a{
+    color: var(--brand-cream, #FBF3E0);
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none;
+}
+.masterimg{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: auto;
+    float: right;
+}
+.footer-logo p{
+    color: var(--brand-cream-soft-55, rgba(251, 243, 224, 0.55));
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 27.9px */
+    margin-bottom: 0px;
+}
+.col-footer-two p{
+    color: var(--brand-cream-soft-55, rgba(251, 243, 224, 0.55));
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+    margin-bottom: 0px;
+}
+@media screen and (min-width: 1300px) and (max-width: 1399px) {
+   
+    
+}
