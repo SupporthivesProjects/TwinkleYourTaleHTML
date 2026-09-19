@@ -1,59 +1,124 @@
 
 <footer class="footer">
     <div class="container p-0">
-        <div class="col-footer col-footer-one">
-            <div class="row">
-                <div class="col-lg-7 col-md-12 col-sm-12 col-12">
-                    <div class="footer-logo">
-                        <img src="./img/logo.svg" class="img-fluid footer-logo-img">
-                        <div>
-                            <p>
-                                123 somewhere street, City, ABC 123
-                            </p>
-                        </div>
+        <div class="col">
+            <div class="d-block d-md-block d-lg-none">
+                <div class="logo-footer">
+                    <img src="img/f-brand.svg"  srcset="img/f-brand.svg" class="img-fluid">
+                    <p>
+                        Illustrated storybooks written around one child, and kept in their library.
+                    </p>
+                </div>
+            </div>
+            <div class="row row-border-one">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                    <div class="footer-nav-link">
+                        <h5>EXPLORE</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Stories</a>
+                            </li>
+                            <li>
+                                <a href="#">Create a story</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-12 col-sm-12 col-12">
-                    <div class="footer-link">
-                        <div class="footer-menu-list footer-menu-list-one">
-                            <h6>Explore</h6>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                    <div class="footer-nav-link">
+                        <h5>COMPANY</h5>
+                        <ul>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                    <div class="footer-nav-link">
+                        <h5>ACCOUNT</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Log in</a>
+                            </li>
+                            <li>
+                                <a href="#">Sign up</a>
+                            </li>
+                            <li>
+                                <a href="#">Your library</a>
+                            </li>
+                            <li>
+                                <a href="#">Your downloads</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6 col-6 d-flex d-lg-none d-md-flex">
+                    <div class="footer-nav-link">
+                        <h5>FIND US</h5>
+                        <ul>
+                            <li>
+                                <a href="">Twinkle Your Tale</a>
+                            </li>
+                            <li>
+                                <a href="">123 Somewhere Street</a>
+                            </li>
+                            <li>
+                                <a href="">City, ABC 123</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row row-border-two">
+                <div class="col-lg-7 col-sm-12 col-12 col-md-6">
+                    <div class="logo-footer d-lg-block d-md-none d-none">
+                        <img src="img/f-brand.svg"  srcset="img/f-brand.svg" class="img-fluid">
+                        <p>
+                            Illustrated storybooks written around one child, and kept in their library.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12 col-12 col-md-6">
+                    <div class="find-addres-d">
+                        <div class="footer-nav-link d-none d-lg-block d-md-none">
+                            <h5>FIND US</h5>
                             <ul>
                                 <li>
-                                    <a href="#">Create</a>
+                                    <a href="">Twinkle Your Tale</a>
                                 </li>
                                 <li>
-                                    <a href="#">Stories</a>
+                                    <a href="">123 Somewhere Street</a>
                                 </li>
                                 <li>
-                                    <a href="#">Pricing</a>
+                                    <a href="">City, ABC 123</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer-menu-list footer-menu-list-two">
-                            <h6>Company</h6>
+                         <div class="footer-nav-link">
+                            <h5>WE ACCEPT</h5>
                             <ul>
                                 <li>
-                                    <a href="#">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#">How it works</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="#">Login / Sign up</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu-list">
-                            <h6>Legals</h6>
-                            <ul>
-                                <li>
-                                    <a href="#">Terms & Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy Policy</a>
+                                    <a href="">
+                                        <img src="img/visa.svg" alt="" class="img-fluid" srcset="img/visa.svg">
+                                    </a>
+                                    <a href="">
+                                        <img src="img/mastercard.svg" alt="" class="img-fluid" srcset="img/mastercard.svg">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -61,19 +126,18 @@
                 </div>
             </div>
         </div>
-    </div>
-     <div class="col-footer col-footer-two">
-        <div class="container p-0">
-            <div class="row footer-bottom m-0">
-                <div class="col-lg-6 col-sm-12 col-6 col-md-6 p-0">
-                    <p>© 2026 Teenytailz. All rights reserved.</p>
-                </div>
-                <div class="col-lg-6 col-sm-12 col-6 col-md-6 p-0">
-                    <div class="masterimg">
-                        <img src="./img/visa.svg" class="img-fluid">
-                        <img src="./img/mastercard.svg" class="img-fluid">
+        <div class="col">
+            <div class="row row-border-three">
+                    <div class="col-lg-7 col-sm-12 col-12 col-md-6 order-lg-0 order-1 p-0">
+                        <p>© 2026 Twinkle Your Tale. All rights reserved.</p>
                     </div>
-                </div>
+                    <div class="col-lg-5 col-sm-12 col-12 col-md-6 p-0">
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
             </div>
         </div>
     </div>
