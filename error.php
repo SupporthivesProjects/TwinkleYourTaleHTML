@@ -25,11 +25,16 @@
     .scrolled .navbar .nav-link {
         color: var(--brand-ink, #0C1428);
     }
+    @media only screen and (max-width: 600px) {
+        .logo-mo-div img {
+            filter: unset;
+        }
+    }
 </style>
 <section class="error-page-main">
     <video src="img/error-page-video.mp4" autoplay muted loop class="bg-image d-lg-block d-md-block d-none"></video>
     <video src="img/error-page-video-mo.mp4" autoplay muted loop class="bg-image d-lg-none d-md-none d-block"></video>
-    <div class="container">
+    <div class="container p-mo">
         <div class="col">
             <div class="error-content">
                 <h6>404</h6>
