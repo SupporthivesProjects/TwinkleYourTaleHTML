@@ -141,7 +141,7 @@
                                     <div class="active_t">
 
                                     </div>
-                                   
+
                                     <div class="rest_remainingt">
 
                                     </div>
@@ -167,38 +167,46 @@
                         </div>
                         <div class="middle_divt">
 
-                      
-                        <div class="particualr_t">
-                            <div class="with_title_svg">
-                                <h4 class="title_tt_svg">✦</h4>
-                                <h3 class="title_tt">Where does it happen?</h3>
-                            </div>
-                            <div class="wrap_wala_div">
+
+                            <div class="particualr_t">
+                                <div class="with_title_svg">
+                                    <h4 class="title_tt_svg">✦</h4>
+                                    <h3 class="title_tt">Where does it happen?</h3>
+                                </div>
+                                <div class="wrap_wala_div">
                                     <button type="button" class="personality-btn_t">A city in the sky</button>
                                     <button type="button" class="personality-btn_t">A deep forest</button>
                                     <button type="button" class="personality-btn_t">Under the sea</button>
                                     <button type="button" class="personality-btn_t">A snow kingdom</button>
                                     <button type="button" class="personality-btn_t">A desert of stars</button>
                                     <button type="button" class="personality-btn_t">A house like theirs</button>
-                     
+
+                                </div>
                             </div>
-                        </div>
-                        <div class="particualr_t">
-                            <div class="with_title_svg">
-                                <h4 class="title_tt_svg">✦</h4>
-                                <h3 class="title_tt">Who goes with them?</h3>
-                            </div>
-                            <div class="wrap_wala_div">
+                            <div class="particualr_t">
+                                <div class="with_title_svg">
+                                    <h4 class="title_tt_svg">✦</h4>
+                                    <h3 class="title_tt">Who goes with them?</h3>
+                                </div>
+                                <div class="wrap_wala_div">
                                     <button type="button" class="personality-btn_t">A fox</button>
                                     <button type="button" class="personality-btn_t">A dragon</button>
                                     <button type="button" class="personality-btn_t">A small robot</button>
                                     <button type="button" class="personality-btn_t">A grandparent</button>
                                     <button type="button" class="personality-btn_t">A best friend</button>
                                     <button type="button" class="personality-btn_t">Nobody, they go alone</button>
-                     
+
+                                </div>
+                            </div>
+                            <div class="particualr_t">
+                                <div class="with_title_svg">
+                                    <h4 class="title_tt_svg">✦</h4>
+                                    <h3 class="title_tt">Anything else we should know about them?</h3>
+                                </div>
+                                <textarea class="input_t textarea_t" placeholder="Enter your message"></textarea>
+                                <h5 class="words_wala_t">0 / 400 words</h5>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div class=" col-md-6 right_wala_image2">
@@ -415,23 +423,39 @@
     <script>
         AOS.init();
     </script>
-     <script>
-        document.querySelectorAll('.personality-btn_t').forEach(function(button) {
-            button.addEventListener('click', function() {
-        
+    <script>
+        document.querySelectorAll('.personality-btn_t').forEach(function (button) {
+            button.addEventListener('click', function () {
+
                 if (this.classList.contains('active_tt')) {
                     this.classList.remove('active_tt');
                     return;
                 }
-        
-                document.querySelectorAll('.personality-btn_t').forEach(function(btn) {
+
+                document.querySelectorAll('.personality-btn_t').forEach(function (btn) {
                     btn.classList.remove('active_tt');
                 });
-        
+
                 this.classList.add('active_tt');
             });
         });
-        </script>
+    </script>
+    <script>
+        const textarea = document.querySelector('.textarea_t');
+        const wordCounter = document.querySelector('.words_wala_t');
+        const maxWords = 400;
+
+        textarea.addEventListener('input', function () {
+            let words = this.value.trim().split(/\s+/).filter(Boolean);
+
+            if (words.length > maxWords) {
+                words = words.slice(0, maxWords);
+                this.value = words.join(' ');
+            }
+
+            wordCounter.textContent = `${words.length} / ${maxWords} words`;
+        });
+    </script>
 </body>
 
 </html>

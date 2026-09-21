@@ -192,6 +192,14 @@
                          
                                 </div>
                             </div>
+                            <div class="particualr_t">
+                                <div class="with_title_svg">
+                                    <h4 class="title_tt_svg">✦</h4>
+                                    <h3 class="title_tt">Anything else we should know about them?</h3>
+                                </div>
+                                <textarea class="input_t textarea_t" placeholder="Enter your message"></textarea>
+                                <h5 class="words_wala_t">0 / 400 words</h5>
+                            </div>
                           
                           
                            
@@ -429,6 +437,22 @@
             });
         });
         </script>
+         <script>
+            const textarea = document.querySelector('.textarea_t');
+            const wordCounter = document.querySelector('.words_wala_t');
+            const maxWords = 400;
+            
+            textarea.addEventListener('input', function () {
+                let words = this.value.trim().split(/\s+/).filter(Boolean);
+            
+                if (words.length > maxWords) {
+                    words = words.slice(0, maxWords);
+                    this.value = words.join(' ');
+                }
+            
+                wordCounter.textContent = `${words.length} / ${maxWords} words`;
+            });
+            </script>
 </body>
 
 </html>

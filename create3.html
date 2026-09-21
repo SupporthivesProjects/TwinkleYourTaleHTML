@@ -167,6 +167,18 @@
                             <h1>How should it look?</h1>
                             <h2>Pick a style and it appears on the left. Every page in the book is drawn in it.</h2>
                         </div>
+
+
+                        <div class="middle_divt">
+                            <div class="particualr_t">
+                                <div class="with_title_svg">
+                                    <h4 class="title_tt_svg">✦</h4>
+                                    <h3 class="title_tt">Anything else we should know about them?</h3>
+                                </div>
+                                <textarea class="input_t textarea_t" placeholder="Enter your message"></textarea>
+                                <h5 class="words_wala_t">0 / 400 words</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class=" col-md-6 right_wala_image3">
@@ -383,6 +395,39 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        document.querySelectorAll('.personality-btn_t').forEach(function(button) {
+            button.addEventListener('click', function() {
+        
+                if (this.classList.contains('active_tt')) {
+                    this.classList.remove('active_tt');
+                    return;
+                }
+        
+                document.querySelectorAll('.personality-btn_t').forEach(function(btn) {
+                    btn.classList.remove('active_tt');
+                });
+        
+                this.classList.add('active_tt');
+            });
+        });
+        </script>
+     <script>
+        const textarea = document.querySelector('.textarea_t');
+        const wordCounter = document.querySelector('.words_wala_t');
+        const maxWords = 400;
+        
+        textarea.addEventListener('input', function () {
+            let words = this.value.trim().split(/\s+/).filter(Boolean);
+        
+            if (words.length > maxWords) {
+                words = words.slice(0, maxWords);
+                this.value = words.join(' ');
+            }
+        
+            wordCounter.textContent = `${words.length} / ${maxWords} words`;
+        });
+        </script>
 </body>
 
 </html>

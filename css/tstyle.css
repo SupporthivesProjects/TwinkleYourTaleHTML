@@ -232,7 +232,10 @@
     /* 23.8px */
     flex: 1 0 0;
 }
-
+.textarea_t {
+    height: 160px;
+    resize: none;
+}
 .wrap_wala_div {
     display: flex;
     align-items: flex-start;
