@@ -165,6 +165,61 @@
                             <h1>Who is this book for?</h1>
                             <h2>Their name goes on the cover and runs through every page. The rest just helps us get them right.</h2>
                         </div>
+                        <div class="middle_divt">
+                            <div class="particualr_t">
+                                <div class="with_title_svg">
+                                    <h4 class="title_tt_svg">✦</h4>
+                                    <h3 class="title_tt">Their first name</h3>
+                                </div>
+                                <input type="text" placeholder="Theo" class="input_t">
+                            </div>
+                            <div class="particualr_t">
+                                <div class="with_title_svg">
+                                    <h4 class="title_tt_svg">✦</h4>
+                                    <h3 class="title_tt">Their age</h3>
+                                </div>
+                                <div class="wrap_wala_div">
+                                        <button type="button" class="personality-btn_t">3</button>
+                                        <button type="button" class="personality-btn_t">4</button>
+                                        <button type="button" class="personality-btn_t">5</button>
+                                        <button type="button" class="personality-btn_t">6</button>
+                                        <button type="button" class="personality-btn_t">7</button>
+                                        <button type="button" class="personality-btn_t">8</button>
+                         
+                                </div>
+                            </div>
+                            <div class="particualr_t">
+                                <div class="with_title_svg">
+                                    <h4 class="title_tt_svg">✦</h4>
+                                    <h3 class="title_tt">What are they like?</h3>
+                                </div>
+                                <div class="wrap_wala_div">
+                                        <button type="button" class="personality-btn_t">Brave</button>
+                                        <button type="button" class="personality-btn_t">Curious</button>
+                                        <button type="button" class="personality-btn_t">Funny</button>
+                                        <button type="button" class="personality-btn_t">Gentle</button>
+                                        <button type="button" class="personality-btn_t">Bold</button>
+                                        <button type="button" class="personality-btn_t">Dreamy</button>
+                         
+                                </div>
+                            </div>
+                            <div class="particualr_t">
+                                <div class="with_title_svg">
+                                    <h4 class="title_tt_svg">✦</h4>
+                                    <h3 class="title_tt">Anything else we should know about them?</h3>
+                                </div>
+                                <h5 class="words_wala_t">12 / 400 words</h5>
+                            </div>
+                            <div class="button_walasection">
+                                <button class="back_button_t">
+                                    Back
+                                </button>
+                                <button class="continue_button_t">
+                                    Continue →
+                                </button>
+                            </div>
+                           
+                        </div>
                     </div>
                 </div>
                 <div class=" col-md-6 right_wala_image">
@@ -381,6 +436,23 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        document.querySelectorAll('.personality-btn_t').forEach(function(button) {
+            button.addEventListener('click', function() {
+        
+                if (this.classList.contains('active_tt')) {
+                    this.classList.remove('active_tt');
+                    return;
+                }
+        
+                document.querySelectorAll('.personality-btn_t').forEach(function(btn) {
+                    btn.classList.remove('active_tt');
+                });
+        
+                this.classList.add('active_tt');
+            });
+        });
+        </script>
 </body>
 
 </html>

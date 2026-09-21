@@ -124,7 +124,7 @@
                                         </div>
                                     </div>
 
-                                    <p> Step 1 of 4</p>
+                                    <p> Step 2 of 4</p>
                                 </div>
                                 <div class="right_top_leftt">
                                     Save and exit
@@ -165,6 +165,40 @@
                             <h1>Where does their story happen?</h1>
                             <h2>Pick the world and who goes with them. We build the rest of it around your answers.</h2>
                         </div>
+                        <div class="middle_divt">
+
+                      
+                        <div class="particualr_t">
+                            <div class="with_title_svg">
+                                <h4 class="title_tt_svg">✦</h4>
+                                <h3 class="title_tt">Where does it happen?</h3>
+                            </div>
+                            <div class="wrap_wala_div">
+                                    <button type="button" class="personality-btn_t">A city in the sky</button>
+                                    <button type="button" class="personality-btn_t">A deep forest</button>
+                                    <button type="button" class="personality-btn_t">Under the sea</button>
+                                    <button type="button" class="personality-btn_t">A snow kingdom</button>
+                                    <button type="button" class="personality-btn_t">A desert of stars</button>
+                                    <button type="button" class="personality-btn_t">A house like theirs</button>
+                     
+                            </div>
+                        </div>
+                        <div class="particualr_t">
+                            <div class="with_title_svg">
+                                <h4 class="title_tt_svg">✦</h4>
+                                <h3 class="title_tt">Who goes with them?</h3>
+                            </div>
+                            <div class="wrap_wala_div">
+                                    <button type="button" class="personality-btn_t">A fox</button>
+                                    <button type="button" class="personality-btn_t">A dragon</button>
+                                    <button type="button" class="personality-btn_t">A small robot</button>
+                                    <button type="button" class="personality-btn_t">A grandparent</button>
+                                    <button type="button" class="personality-btn_t">A best friend</button>
+                                    <button type="button" class="personality-btn_t">Nobody, they go alone</button>
+                     
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class=" col-md-6 right_wala_image2">
@@ -381,6 +415,23 @@
     <script>
         AOS.init();
     </script>
+     <script>
+        document.querySelectorAll('.personality-btn_t').forEach(function(button) {
+            button.addEventListener('click', function() {
+        
+                if (this.classList.contains('active_tt')) {
+                    this.classList.remove('active_tt');
+                    return;
+                }
+        
+                document.querySelectorAll('.personality-btn_t').forEach(function(btn) {
+                    btn.classList.remove('active_tt');
+                });
+        
+                this.classList.add('active_tt');
+            });
+        });
+        </script>
 </body>
 
 </html>
