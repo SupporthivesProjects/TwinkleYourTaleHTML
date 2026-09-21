@@ -173,6 +173,44 @@
                             <div class="particualr_t">
                                 <div class="with_title_svg">
                                     <h4 class="title_tt_svg">✦</h4>
+                                    <h3 class="title_tt">Pick the art style</h3>
+                                </div>
+                                <div class="wrap_wala_div different_gap">
+                                    <div class="art_divt3">
+                                        <div class="art_imgt3"></div>
+                                        <h6>Storybook classic</h6>
+                                    </div>
+                                    
+                                    <div class="art_divt3 active_t3">
+                                        <div class="art_imgt3"></div>
+                                        <h6>Soft watercolour</h6>
+                                    </div>
+                                    
+                                    <div class="art_divt3">
+                                        <div class="art_imgt3"></div>
+                                        <h6>Paper cut</h6>
+                                    </div>
+                                    
+                                    <div class="art_divt3">
+                                        <div class="art_imgt3"></div>
+                                        <h6>Pastel dream</h6>
+                                    </div>
+                                    
+                                    <div class="art_divt3">
+                                        <div class="art_imgt3"></div>
+                                        <h6>Ink and gold</h6>
+                                    </div>
+                                    
+                                    <div class="art_divt3">
+                                        <div class="art_imgt3"></div>
+                                        <h6>Night sky</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="particualr_t">
+                                <div class="with_title_svg">
+                                    <h4 class="title_tt_svg">✦</h4>
                                     <h3 class="title_tt">Anything else we should know about them?</h3>
                                 </div>
                                 <textarea class="input_t textarea_t" placeholder="Enter your message"></textarea>
@@ -417,17 +455,53 @@
         const wordCounter = document.querySelector('.words_wala_t');
         const maxWords = 400;
         
-        textarea.addEventListener('input', function () {
-            let words = this.value.trim().split(/\s+/).filter(Boolean);
+        function countWords(text) {
+            return text.trim().split(/\s+/).filter(Boolean).length;
+        }
         
-            if (words.length > maxWords) {
-                words = words.slice(0, maxWords);
-                this.value = words.join(' ');
+        textarea.addEventListener('beforeinput', function (e) {
+            if (!e.data) return;
+        
+            const newValue =
+                this.value.slice(0, this.selectionStart) +
+                e.data +
+                this.value.slice(this.selectionEnd);
+        
+            if (countWords(newValue) > maxWords) {
+                e.preventDefault();
             }
-        
-            wordCounter.textContent = `${words.length} / ${maxWords} words`;
         });
+        
+        textarea.addEventListener('paste', function (e) {
+            const pastedText = e.clipboardData.getData('text');
+        
+            const newValue =
+                this.value.slice(0, this.selectionStart) +
+                pastedText +
+                this.value.slice(this.selectionEnd);
+        
+            if (countWords(newValue) > maxWords) {
+                e.preventDefault();
+            }
+        });
+        
+        textarea.addEventListener('input', function () {
+            wordCounter.textContent = `${countWords(this.value)} / ${maxWords} words`;
+        });
+        
+        wordCounter.textContent = `0 / ${maxWords} words`;
         </script>
+        <script>
+            document.querySelectorAll('.art_divt3').forEach(item => {
+                item.addEventListener('click', function () {
+                    document.querySelectorAll('.art_divt3').forEach(card => {
+                        card.classList.remove('active_t3');
+                    });
+            
+                    this.classList.add('active_t3');
+                });
+            });
+            </script>
 </body>
 
 </html>
