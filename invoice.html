@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A4 Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #e5e5e5;
+      font-family: Arial, sans-serif;
+    }
+
+    .a4-page {
+      width: 595px;
+      height: 842px;
+      margin: 20px auto;
+      background-image: url(./img/pdf_cover.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .a4-page {
+        width: 595px;
+        height: 842px;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="a4-page">
+
+
+
+
+  </div>
+
+</body>
+
+</html>
