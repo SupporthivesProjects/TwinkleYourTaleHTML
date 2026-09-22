@@ -150,7 +150,146 @@
 .scrolled .navbar{
    background: var(--brand-cream, #F3EEE4);
 }
-/* -----------------------error------------------------------ */
+/* -----------------------error and faqs------------------------------ */
+ .fqs-top{
+    padding: 80px 0px;
+    background: var(--brand-ink, #0C1428);
+    margin-top: 136px;
+}
+.top-faes-content h6{
+    display: flex;
+    gap: 8px;
+}
+.top-faes-content h6{
+    color: var(--brand-gold, #E3AC5A);
+    font-family: Figtree;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.top-faes-content h2{
+    color: var(--brand-cream, #F3EEE4);
+    font-family: Newsreader;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124%; /* 64.48px */
+    margin-bottom: 0px;
+}
+.top-faes-content p{
+    color: var(--brand-cream, #F3EEE4);
+    font-family: Figtree;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 31px */
+    margin-bottom: 0px;
+}
+.top-faes-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fqs-top-two{
+    padding: 80px 0px;
+    background: var(--brand-cream, #F3EEE4);
+}
+.accordion-header button{
+    color: var(--brand-ink, #0C1428);
+    font-family: Figtree;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    display: flex;
+    padding: 24px 0 0 0;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border: 0px;
+    border-bottom: 0px;
+    background: transparent;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+.accordion-header {
+    margin-bottom: 0;
+    width: 100%;
+}
+.accordion-item:first-of-type {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: 16px;
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    margin-left: auto;
+    content: "";
+    background-image: url(../img/faqs-icon.svg);
+    width: 12px;
+    height: 7px;
+     transform: rotate(180deg);
+    transition: var(--bs-accordion-btn-icon-transition);
+    background-size: cover;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/faqs-icon.svg);
+    transform: rotate(0deg);
+    width: 12px;
+    height: 7px;
+    background-size: cover;
+}
+.accordion-item{
+    display: flex;
+    padding: 0 28px 24px 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-bottom: 16px;
+    background: transparent;
+    border-radius: 12px;
+    border: 1px solid var(--brand-bronze-line-30, rgba(169, 115, 42, 0.30));
+
+}
+.accordion-item:not(:first-of-type) {
+    border-top: 1px solid var(--brand-bronze-line-30, rgba(169, 115, 42, 0.30));
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-body {
+    padding: 0px 0px;
+}
+.accordion-body p{
+    color: var(--brand-stone, #6B6656);
+    font-family: Figtree;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 26.35px */
+    margin-bottom: 0px;
+}
+.accordion-item:last-of-type {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-bottom: 0px;
+}
 .error-page-main{
     height: 100vh;
     position: relative;
