@@ -1,0 +1,1217 @@
+@media only screen and (max-device-width: 600px) {
+    .contact-us {
+        padding: 116px 24px 32px;
+    }
+
+    .contact-us__content {
+        gap: 20px;
+    }
+
+    .contact-us__title {
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    .contact-us__description {
+        font-size: 17px;
+        line-height: 150%;
+    }
+
+
+    .help-section {
+        padding: 32px 24px;
+    }
+
+    .help-section__cards {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .help-card {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+        background-size: 100% 100%;
+    }
+
+    .contact-section__layout {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .contact-form__button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .help-card__content {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .help-card__description {
+        text-align: center;
+    }
+
+    .contact-section {
+        padding: 40px 0px 0px;
+    }
+
+
+    .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form__terms {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding-top: 8px;
+    }
+
+    .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 327px;
+        margin: 0px auto;
+    }
+
+    .contact-help {
+        padding: 40px 24px;
+        gap: 24px;
+    }
+
+    .contact-help__content {
+        gap: 24px;
+
+    }
+
+    .contact-help__item {
+        gap: 24px;
+
+    }
+
+    .contact-help__title {
+        font-size: 24px;
+    }
+
+
+    /* HOW IT WORKS */
+.how-it-works {
+    width: 100%;
+    padding: 86px 0px 0px;
+}
+
+        .how-it-works__design {
+        min-height: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        background: var(--brand-ink, #0C1428);
+
+        overflow: hidden;
+    }
+
+
+    /* ======================================
+       VIDEO
+    ====================================== */
+
+    .how-it-works__video {
+        position: relative;
+        inset: auto;
+
+        width: 100%;
+        height: 100%;
+
+        flex: 0 0 137px;
+
+        object-fit: cover;
+        object-position: center top;
+    }
+
+
+    /* ======================================
+       OVERLAY
+    ====================================== */
+
+    .how-it-works__overlay {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        right: 0;
+
+        height: 137px;
+
+        background: rgba(7, 12, 24, 0.08);
+
+        z-index: 2;
+    }
+
+
+    /* ======================================
+       CONTENT
+    ====================================== */
+
+    .how-it-works__content {
+        width: 100%;
+
+        position: relative;
+        z-index: 3;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 16px;
+
+padding: 24px 24px 40px 24px;
+
+        background: var(--brand-ink, #0C1428);
+
+        text-align: center;
+        margin-top: 0px;
+    }
+
+
+    /* ======================================
+       EYEBROW
+    ====================================== */
+
+    .how-it-works__eyebrow {
+        color: var(--brand-gold, #E3AC5A);
+
+        font-family: "Figtree", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+
+    /* ======================================
+       TITLE
+    ====================================== */
+
+    .how-it-works__title {
+        width: 100%;
+
+        margin: 0;
+color: var(--brand-cream, #F3EEE4);
+text-align: center;
+font-family: "Newsreader";
+font-size: 38px;
+font-style: normal;
+font-weight: 300;
+line-height: 122%; /* 46.36px */
+    }
+
+
+    /* ======================================
+       DESCRIPTION
+    ====================================== */
+
+    .how-it-works__description {
+        width: 100%;
+max-width: 218px;
+        margin: 0;
+
+color: var(--brand-mist, #C9C9DA);
+
+        font-family: "Figtree", sans-serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+
+        text-align: center;
+    }
+
+
+    /* ======================================
+       PAPER EDGE
+    ====================================== */
+    .how-it-works__paper-edge {
+        position: absolute;
+        top: -15px;
+        bottom: auto;
+        left: 0%;
+        width: 100%;
+        height: auto;
+        z-index: 4;
+        pointer-events: none;
+    }
+
+
+.story-section__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    z-index: 3;
+}
+
+
+
+    .story-section {
+        width: 100%;
+        padding: 0px;
+                height: 100%;
+    }
+
+
+    .story-section__design {
+        width: 100%;
+
+        min-height: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+        justify-content: flex-start;
+
+        gap: 0;
+
+        overflow: hidden;
+    }
+
+
+    /* ======================================
+       IMAGE FIRST
+    ====================================== */
+
+    .story-section__art {
+    width: 100%;
+        height: auto;
+        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        position: relative;
+        top: 0px;
+    }
+
+
+    .story-section__art-image {
+            width: 100%;
+        max-width: 100%;
+        height: 274px;
+        display: block;
+        object-fit: contain;
+        aspect-ratio: auto;
+
+    }
+
+
+    /* ======================================
+       CONTENT BELOW IMAGE
+    ====================================== */
+
+    .story-section__content {
+     width: 100%;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px 24px 0px;
+    }
+
+
+    /* ======================================
+       TITLE
+    ====================================== */
+
+    .story-section__title {
+        margin: 0;
+
+        font-size: 30px;
+        line-height: 126%;
+    }
+
+
+    /* ======================================
+       TITLE LINES
+    ====================================== */
+
+    .story-section__title-line {
+        display: flex;
+
+        align-items: center;
+
+        gap: 0;
+    }
+
+
+    /* ======================================
+       W IMAGE
+    ====================================== */
+
+    .story-section__w-image {
+        width: 42px;
+        height: 42px;
+
+        flex-shrink: 0;
+    }
+
+
+    /* ======================================
+       DESCRIPTION
+    ====================================== */
+
+    .story-section__description {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        font-size: 17px;
+        line-height: 155%;
+    }
+
+
+    .commitments-section__cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.commitments-section{
+    padding: 48px 0px 56px;
+}
+
+.commitments-section__title{
+    color: var(--brand-cream, #F3EEE4);
+text-align: center;
+font-family: "Newsreader";
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 126%; /* 37.8px */
+}
+
+
+.commitments-section__heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    max-width: 327px;
+}
+
+.commitment-card{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 12px;
+align-self: stretch;
+padding: 0px;
+}
+
+.commitment-card__title{
+    color: var(--brand-cream, #F3EEE4);
+text-align: center;
+font-family: "Newsreader";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 31.2px */
+}
+
+.commitment-card__description{
+    color: var(--brand-mist, #C9C9DA);
+text-align: center;
+font-family: "Figtree";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 22.5px */
+}
+
+.commitment-card__content{
+    gap: 16px;
+}
+
+
+.commitment-card__image img{
+    width: 120px;
+height: 120px;
+aspect-ratio: 1/1;
+}
+
+.commitment-card__image{
+        width: 120px;
+height: 120px;
+aspect-ratio: 1/1;
+}
+
+
+.story-process{
+     background-image: url(../img/contact_body.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e2d1;
+    padding: 40px 24px;
+            height: 1873px;
+
+}
+
+.story-process__background{
+    display: none;
+}
+
+
+.story-process__heading {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    z-index: 3;
+    max-width: 327px;
+}
+
+.story-process__design {
+    width: 100%;
+    position: relative;
+    display: flex;
+    aspect-ratio: 1980 / 1850;
+    overflow: visible;
+    flex-direction: column;
+}
+
+.story-process__step--one {
+    width: 100%;
+    left: 0;
+    top: 246px;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.story-process__step {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    flex-direction: column !important;
+}
+
+
+.story-process__main-title{
+    color: var(--brand-ink, #0C1428);
+text-align: center;
+font-family: "Newsreader";
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 126%; /* 37.8px */
+}
+
+
+.story-process__image img{
+    max-width: 327px;
+        height: 200px;
+}
+
+.story-process__step--one .story-process__image {
+    height: 200px;
+}
+
+
+.story-process__step--one .story-process__content {
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+}
+
+.story-process__number{
+    color: var(--brand-bronze, #A9732A);
+text-align: center;
+font-family: "Figtree";
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 16.8px */
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.story-process__title{
+    color: var(--brand-ink, #0C1428);
+text-align: center;
+font-family: "Newsreader";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 31.2px */
+}
+
+.story-process__description{
+    color: var(--brand-stone, #6B6656);
+text-align: center;
+font-family: "Figtree";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 155%; /* 26.35px */
+}
+
+.story-process__step--two {
+    width: 100%;
+    right: 0;
+    top: 286px;
+    gap: 16px;
+}
+
+.story-process__step--two .story-process__content {
+    width: 100%;
+}
+
+.story-process__step--three {
+    width: 100%;
+    left: 0;
+    top: 106%;
+    gap: 16px;}
+
+
+.story-process__step--three .story-process__content {
+    width: 100%;
+}
+
+.story-process__step--four .story-process__content {
+    width: 100%;
+}
+
+
+.story-process__step--four {
+    width: 100%;
+    right: 0;
+    top: 117%;
+    gap: 16px;
+}
+
+
+    .consistent-world {
+        width: 100%;
+
+        background: var(--brand-ink, #0C1428);
+    }
+
+
+    .consistent-world__design {
+        width: 100%;
+
+        min-height: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        overflow: hidden;
+
+        background: var(--brand-ink, #0C1428);
+    }
+
+
+    /* ======================================
+       TOP IMAGE
+    ====================================== */
+
+    .consistent-world__background {
+        position: relative;
+        inset: auto;
+
+        width: 100%;
+        display: block;
+
+        object-fit: cover;
+        object-position: center top;
+    }
+
+
+    /* ======================================
+       CONTENT CONTAINER
+    ====================================== */
+
+    .consistent-world__design > .container {
+        width: 100%;
+
+        position: relative;
+        z-index: 2;
+
+        padding: 0;
+    }
+
+
+    /* ======================================
+       DARK CONTENT
+    ====================================== */
+
+    .consistent-world__content {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 24px 24px 40px;
+
+        background: var(--brand-ink, #0C1428);
+    }
+
+
+    /* ======================================
+       EYEBROW
+    ====================================== */
+
+    .consistent-world__eyebrow {
+        font-family: "Figtree", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+
+    /* ======================================
+       TITLE
+    ====================================== */
+
+    .consistent-world__title {
+        margin: 0;
+
+        font-family: "Newsreader", serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 126%;
+    }
+
+
+    /* ======================================
+       DESCRIPTION
+    ====================================== */
+
+    .consistent-world__description {
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .consistent-world__description p {
+        margin: 0;
+
+        font-family: "Figtree", sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .story-cta {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        background: var(--brand-cream, #F3EEE4);
+
+        overflow: hidden;
+    }
+
+
+    /* ======================================
+       IMAGE BECOMES NORMAL FLOW ELEMENT
+    ====================================== */
+
+    .story-cta__background {
+        position: relative;
+        inset: auto;
+
+        order: 2;
+
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+        object-position: center;
+
+        z-index: 1;
+    }
+
+
+    /* ======================================
+       CONTENT CONTAINER
+    ====================================== */
+
+    .story-cta > .container {
+        width: 100%;
+
+        order: 1;
+
+        padding: 0;
+    }
+
+
+    /* ======================================
+       DESIGN
+    ====================================== */
+
+    .story-cta__design {
+        width: 100%;
+
+        min-height: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+
+    /* ======================================
+       CTA CONTENT
+    ====================================== */
+
+    .story-cta__content {
+        width: 100%;
+
+display: flex;
+padding: 40px 24px;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+border-radius: var(--radius-l, 16px);
+background: #FDEBCE;
+margin-top: 0px;
+    }
+
+    /* ======================================
+       EYEBROW
+    ====================================== */
+
+    .story-cta__eyebrow {
+        font-size: 12px;
+        line-height: 140%;
+
+        letter-spacing: 2px;
+    }
+
+
+    /* ======================================
+       TITLE
+    ====================================== */
+
+    .story-cta__title {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 30px;
+        line-height: 126%;
+    }
+
+
+    /* ======================================
+       DESCRIPTION
+    ====================================== */
+
+    .story-cta__description {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 17px;
+        line-height: 150%;
+    }
+
+
+    /* ======================================
+       BUTTON
+    ====================================== */
+
+    .story-cta__button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* ======================================
+       CHANGE BUTTON LABEL WITHOUT HTML
+    ====================================== */
+
+    .story-cta__button span {
+        display: none;
+    }
+
+    .story-cta__button::before {
+        content: "Begin their story";
+    }
+
+
+    /* ======================================
+       ARROW
+    ====================================== */
+
+    .story-cta__button-icon {
+        width: 11px;
+        height: 10px;
+    }
+
+    .contact-success-modal__content{
+        display: flex;
+width: 327px;
+padding: 28px;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+margin: auto;
+    }
+
+    .contact-success-modal__title{
+        color: var(--brand-ink, #0C1428);
+text-align: center;
+font-family: "Newsreader";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 31.2px */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 950px) and (max-device-width: 998px) {}
+
+
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1199px) {}
+
+
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1348px) {
+
+    .story-section__art-image {
+        width: 765px;
+        height: 760px;
+        flex-shrink: 0;
+        aspect-ratio: 3 / 2;
+        max-width: none;
+        display: block;
+        object-fit: contain;
+        object-position: right center;
+    }
+
+
+
+    .story-process__step--three {
+        width: 45%;
+        left: 16%;
+        top: 53%;
+        gap: 48px;
+        flex-direction: row-reverse;
+    }
+
+    .story-process__step--three .story-process__image img {
+        width: 431px;
+    }
+
+    .story-process__step--two .story-process__image img {
+        width: 301px;
+
+    }
+
+    .story-process__step--four {
+        width: 23%;
+        right: 15%;
+        top: 59%;
+        gap: 22px;
+        flex-direction: row-reverse;
+    }
+
+    .story-process__step--two {
+        width: 42%;
+        right: 8%;
+        top: 35.5%;
+        gap: 32px;
+    }
+
+
+    .story-section__content {
+        width: 52%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 178px;
+        padding-right: 40px;
+        position: relative;
+        z-index: 3;
+    }
+}
+
+@media only screen and (min-device-width: 1349px) and (max-device-width: 1439px) {
+
+    .story-section__art-image {
+        width: 765px;
+        height: 760px;
+        flex-shrink: 0;
+        aspect-ratio: 3 / 2;
+        max-width: none;
+        display: block;
+        object-fit: contain;
+        object-position: right center;
+    }
+
+
+
+    .story-process__step--three {
+        width: 45%;
+        left: 16%;
+        top: 53%;
+        gap: 48px;
+        flex-direction: row-reverse;
+    }
+
+    .story-process__step--three .story-process__image img {
+        width: 431px;
+    }
+
+    .story-process__step--two .story-process__image img {
+        width: 301px;
+
+    }
+
+
+    .story-process__step--one .story-process__image img {
+        width: 205px;
+    }
+
+    .story-process__step--four {
+        width: 23%;
+        right: 15%;
+        top: 59%;
+        gap: 22px;
+        flex-direction: row-reverse;
+    }
+
+    .story-process__step--two {
+        width: 42%;
+        right: 8%;
+        top: 35.5%;
+        gap: 32px;
+    }
+
+
+    .story-section__content {
+        width: 52%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 178px;
+        padding-right: 40px;
+        position: relative;
+        z-index: 3;
+    }
+}
+
+@media only screen and (min-device-width: 1440px) and (max-device-width: 1499px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1365px !important;
+    }
+
+    .story-section__art-image {
+        width: 765px;
+        height: 760px;
+        flex-shrink: 0;
+        aspect-ratio: 3 / 2;
+        max-width: none;
+        display: block;
+        object-fit: contain;
+        object-position: right center;
+    }
+
+
+
+    .story-process__step--three {
+        width: 45%;
+        left: 16%;
+        top: 53%;
+        gap: 48px;
+        flex-direction: row-reverse;
+    }
+
+    .story-process__step--three .story-process__image img {
+        width: 431px;
+    }
+
+    .story-process__step--two .story-process__image img {
+        width: 301px;
+
+    }
+
+    .story-process__step--four {
+        width: 23%;
+        right: 15%;
+        top: 59%;
+        gap: 22px;
+        flex-direction: row-reverse;
+    }
+
+    .story-process__step--two {
+        width: 42%;
+        right: 8%;
+        top: 35.5%;
+        gap: 32px;
+    }
+
+
+    .story-section__content {
+        width: 52%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 178px;
+        padding-right: 40px;
+        position: relative;
+        z-index: 3;
+    }
+
+
+
+
+}
+
+@media only screen and (min-device-width: 1500px) and (max-device-width: 1699px) {
+    .story-section__art-image {
+        width: 852px;
+        height: 603px;
+        flex-shrink: 0;
+        aspect-ratio: 3 / 2;
+        max-width: none;
+        display: block;
+        object-fit: contain;
+        object-position: right center;
+    }
+
+
+
+    .story-process__step--three {
+        width: 45%;
+        left: 16%;
+        top: 53%;
+        gap: 48px;
+        flex-direction: row-reverse;
+    }
+
+    .story-process__step--three .story-process__image img {
+        width: 431px;
+    }
+
+    .story-process__step--two .story-process__image img {
+        width: 301px;
+
+    }
+
+    .story-process__step--four {
+        width: 23%;
+        right: 15%;
+        top: 59%;
+        gap: 22px;
+        flex-direction: row-reverse;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 1700px) and (max-device-width: 1799px) {}
+
+@media only screen and (min-device-width: 1800px) and (max-device-width: 1919px) {}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 1920px) {}
