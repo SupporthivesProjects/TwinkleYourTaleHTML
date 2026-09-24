@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Library Pagination</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: #f7f2e8;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* =================================
+           CARD GRID
+        ================================= */
+
+        .library-card-grid {
+
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 14px;
+
+        }
+
+
+        /* =================================
+           CARD
+        ================================= */
+        .library-card-box{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+          flex: 1 0 0;
+        }
+        .library-card {
+          border-radius: var(--radius-l, 16px);
+          border: 1px solid var(--brand-bronze-line-30, rgba(169, 115, 42, 0.30));
+          background: var(--brand-cream, #F3EEE4);
+          display: flex;
+          padding: 12px 12px 20px 12px;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+          gap: 16px;
+          align-self: stretch;
+        }
+
+        .library-card-texts{
+          display: flex;
+          padding: 0 8px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 6px;
+          align-self: stretch;
+        }
+
+        .library-card-texts h1{
+          color: var(--brand-ink, #0C1428);
+          margin: 0px;
+          font-family: Newsreader;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 128%;
+        }
+
+        .library-card-texts p{
+          color: var(--brand-bronze, #A9732A);
+          margin: 0px;
+          font-family: Figtree;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+        .read-download{
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+        }
+        .read-download a{
+          color: var(--brand-bronze, #A9732A);
+          text-decoration: none;
+          font-family: Figtree;
+          font-size: 15px;
+          text-transform: capitalize;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 130%;
+        }
+
+        /* =================================
+           CARD IMAGE
+        ================================= */
+
+        .library-card-image {
+
+            width: 100%;
+
+            aspect-ratio: 0.72;
+
+            object-fit: cover;
+
+            display: block;
+
+            border-radius: 6px;
+
+        }
+
+
+        /* =================================
+           CARD TITLE
+        ================================= */
+
+        .library-card-title {
+
+            margin: 8px 0 4px;
+
+            font-family: Georgia, serif;
+
+            font-size: 16px;
+
+            font-weight: 500;
+
+            color: #1c2436;
+
+        }
+
+
+        /* =================================
+           CARD META
+        ================================= */
+
+        .library-card-meta {
+
+            margin: 0;
+
+            font-size: 10px;
+
+            color: #9a7650;
+
+        }
+
+
+        /* =================================
+           CARD LINKS
+        ================================= */
+
+        .library-card-links {
+
+            display: flex;
+
+            gap: 12px;
+
+            margin-top: 12px;
+
+        }
+
+
+        .library-card-links a {
+
+            font-size: 10px;
+
+            color: #9a7650;
+
+            text-decoration: none;
+
+        }
+
+
+        .library-card-links a:hover {
+
+            text-decoration: underline;
+
+        }
+
+
+        /* =================================
+           PAGINATION
+        ================================= */
+
+        .library-pagination {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 5px;
+
+            margin-top: 28px;
+
+        }
+
+
+        .library-page-btn,
+        .library-next-btn {
+
+            width: 22px;
+
+            height: 22px;
+
+            padding: 0;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border: 1px solid #e1d9ca;
+
+            border-radius: 4px;
+
+            background: transparent;
+
+            color: #6f6a61;
+
+            font-size: 10px;
+
+            cursor: pointer;
+
+            transition: all 0.2s ease;
+
+        }
+
+
+        .library-page-btn:hover,
+        .library-next-btn:hover:not(:disabled) {
+
+            background: #f0d29c;
+
+            border-color: #e7b45b;
+
+            color: #222;
+
+        }
+
+
+        /* ACTIVE PAGE */
+
+        .library-page-active {
+
+            background: #e9ad4d !important;
+
+            border-color: #e9ad4d !important;
+
+            color: #fff !important;
+
+        }
+
+
+        /* DISABLED NEXT */
+
+        .library-next-btn:disabled {
+
+            opacity: 0.45;
+
+            cursor: default;
+
+        }
+
+
+        /* =================================
+           MOBILE
+        ================================= */
+
+        @media (max-width: 767px) {
+
+            .library-card-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .library-card-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         ALL CARDS ARE WRITTEN IN HTML
+    ================================= -->
+
+    <div class="library-card-grid">
+      <div class="library-card-box">
+        <div class="library-card">
+          <img src="img/story-cover2.png" alt="">
+          <div class="library-card-texts">
+            <h1>
+              The Whispering Woods
+            </h1>
+            <p>
+              For Theo  ·  Made 19 Aug 2026
+            </p>
+          </div>
+        </div>
+        <div class="read-download">
+          <a href="">read</a>
+          <a href="">Download PDF</a>
+        </div>
+       </div>
+       <div class="library-card-box">
+        <div class="library-card">
+          <img src="img/story-cover2.png" alt="">
+          <div class="library-card-texts">
+            <h1>
+              The Whispering Woods
+            </h1>
+            <p>
+              For Theo  ·  Made 19 Aug 2026
+            </p>
+          </div>
+        </div>
+        <div class="read-download">
+          <a href="">read</a>
+          <a href="">Download PDF</a>
+        </div>
+       </div>
+       <div class="library-card-box">
+        <div class="library-card">
+          <img src="img/story-cover2.png" alt="">
+          <div class="library-card-texts">
+            <h1>
+              The Whispering Woods
+            </h1>
+            <p>
+              For Theo  ·  Made 19 Aug 2026
+            </p>
+          </div>
+        </div>
+        <div class="read-download">
+          <a href="">read</a>
+          <a href="">Download PDF</a>
+        </div>
+       </div>
+       <div class="library-card-box">
+        <div class="library-card">
+          <img src="img/story-cover2.png" alt="">
+          <div class="library-card-texts">
+            <h1>
+              The Whispering Woods
+            </h1>
+            <p>
+              For Theo  ·  Made 19 Aug 2026
+            </p>
+          </div>
+        </div>
+        <div class="read-download">
+          <a href="">read</a>
+          <a href="">Download PDF</a>
+        </div>
+       </div>
+       <div class="library-card-box">
+        <div class="library-card">
+          <img src="img/story-cover2.png" alt="">
+          <div class="library-card-texts">
+            <h1>
+              The Whispering Woods
+            </h1>
+            <p>
+              For Theo  ·  Made 19 Aug 2026
+            </p>
+          </div>
+        </div>
+        <div class="read-download">
+          <a href="">read</a>
+          <a href="">Download PDF</a>
+        </div>
+       </div>
+       <div class="library-card-box">
+        <div class="library-card">
+          <img src="img/story-cover2.png" alt="">
+          <div class="library-card-texts">
+            <h1>
+              The Whispering Woods
+            </h1>
+            <p>
+              For Theo  ·  Made 19 Aug 2026
+            </p>
+          </div>
+        </div>
+        <div class="read-download">
+          <a href="">read</a>
+          <a href="">Download PDF</a>
+        </div>
+       </div>
+       <div class="library-card-box">
+        <div class="library-card">
+          <img src="img/story-cover2.png" alt="">
+          <div class="library-card-texts">
+            <h1>
+              The Whispering Woods
+            </h1>
+            <p>
+              For Theo  ·  Made 19 Aug 2026
+            </p>
+          </div>
+        </div>
+        <div class="read-download">
+          <a href="">read</a>
+          <a href="">Download PDF</a>
+        </div>
+       </div>
+       <div class="library-card-box">
+        <div class="library-card">
+          <img src="img/story-cover2.png" alt="">
+          <div class="library-card-texts">
+            <h1>
+              The Whispering Woods
+            </h1>
+            <p>
+              For Theo  ·  Made 19 Aug 2026
+            </p>
+          </div>
+        </div>
+        <div class="read-download">
+          <a href="">read</a>
+          <a href="">Download PDF</a>
+        </div>
+       </div>
+
+    <!-- =================================
+         PAGINATION
+    ================================== -->
+
+    <div
+        class="library-pagination"
+        id="libraryPagination">
+    </div>
+
+
+    <script>
+        const libraryCards =
+            document.querySelectorAll(
+                ".library-card-box"
+            );
+        const libraryPagination =
+            document.getElementById(
+                "libraryPagination"
+            );
+        const libraryCardsPerPage = 4;
+        const libraryTotalPages =
+            Math.ceil(
+                libraryCards.length /
+                libraryCardsPerPage
+            );
+        let libraryCurrentPage = 1;
+        function showLibraryPage(page) {
+            libraryCurrentPage = page;
+            libraryCards.forEach(
+                function(card, index) {
+                    const startIndex =
+                        (page - 1) *
+                        libraryCardsPerPage;
+                    const endIndex =
+                        startIndex +
+                        libraryCardsPerPage;
+                    if (
+                        index >= startIndex &&
+                        index < endIndex
+                    ) {
+                        card.style.display = "";
+                    }
+                    else {
+                        card.style.display = "none";
+                    }
+                }
+            );
+            updateLibraryPagination();
+        }
+
+        function updateLibraryPagination() {
+            libraryPagination.innerHTML = "";
+
+            for (
+                let page = 1;
+                page <= libraryTotalPages;
+                page++
+            ) {
+
+                const pageButton =
+                    document.createElement(
+                        "button"
+                    );
+
+
+                pageButton.type = "button";
+
+
+                pageButton.className =
+                    "library-page-btn";
+
+
+                pageButton.textContent =
+                    page;
+
+                if (
+                    page ===
+                    libraryCurrentPage
+                ) {
+
+                    pageButton.classList.add(
+                        "library-page-active"
+                    );
+
+                }
+
+                pageButton.addEventListener(
+                    "click",
+                    function() {
+
+                        showLibraryPage(page);
+
+                    }
+                );
+
+
+                libraryPagination.appendChild(
+                    pageButton
+                );
+
+            }
+
+            const nextButton =
+                document.createElement(
+                    "button"
+                );
+
+            nextButton.type = "button";
+
+            nextButton.className =
+                "library-next-btn";
+
+            nextButton.innerHTML = "→";
+            nextButton.disabled =
+                libraryCurrentPage ===
+                libraryTotalPages;
+
+
+            nextButton.addEventListener(
+                "click",
+                function() {
+
+                    if (
+                        libraryCurrentPage <
+                        libraryTotalPages
+                    ) {
+
+                        showLibraryPage(
+                            libraryCurrentPage + 1
+                        );
+
+                    }
+
+                }
+            );
+            libraryPagination.appendChild(
+                nextButton
+            );
+
+        }
+        showLibraryPage(1);
+    </script>
+
+
+</body>
+
+</html>
