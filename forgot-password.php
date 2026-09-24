@@ -1,0 +1,331 @@
+<?php
+  $currentPage = basename($_SERVER['PHP_SELF']);
+?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twinkle</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/tg-icon.svg">
+    <link rel="stylesheet" href="css/mainBase.css">
+  </head>
+  <body>
+  
+  <div class="main-div">
+    <header class="header-top fixed-top" id="header-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container p-mo p-0">
+         <div class="logo-mo-div">
+            <a class="navbar-brand" href="#">
+              <img src="./img/m-logo.svg" alt="" class="img-fluid d-lg-none d-md-blocks d-block  brand-logo-mo" id="logo">
+              <img src="./img/brand-b.svg" alt="" class="img-fluid d-lg-block d-md-none d-none  brand-logo">
+            </a>
+            <div class="cart-mo-top-btn">
+              <div class="user-price">
+                <h6>5,650</h6>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- <div class="hamburger hamburger--3dy">
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner"></div>
+                    </div>
+                  </div> -->
+                  <!-- <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span> -->
+              </button>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-nav-one ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="ourstory.php">Stories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.php">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.php">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourstory.php">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.php">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.php">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-credit" href="aboutus.php">3,450 tokens</a>
+              </li>
+            </ul>
+            <div class="d-flex d-right-mo" role="search">
+              <div class="ifuserlloginDetails">
+               
+              </div>
+              <div class="nav-item dropdown d-currency-mo dropdown-toggle-cur">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 USD
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="">
+                    <a class="dropdown-item active" href="#">
+                        <span>USD</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                        <span>EUR</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item " href="#">
+                      <span>GBP</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a class="btn btn-tokens d-none" href="signup.php">5,650 tokens</a>
+              <a class="btn btn-login" href="signup.php">
+                <span class="btn-border-dots">Create</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+   </header>
+  
+    <section class="login-section ">
+        <img class="login-background" src="./img/login-bg.png" alt="" aria-hidden="true">
+        <div class="login-content">
+            <div class="login-card " id="login-card">
+                <h2>Forgotten password?</h2>
+
+                <form action="" method="post" class="login-form">
+                    <div class="form-group">
+                        <p class="form-group-para">Tell us the email you signed up with and we will send a reset link to it.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Email</label>
+                        <input type="password" id="login-password" name="password" placeholder="alex.morgan@example.com" autocomplete="current-password" required>
+                    </div>
+
+                </form>
+                <button type="submit" class="login-submit">Send reset link <span aria-hidden="true"><img src="./img/arrow-right.svg" alt=""></span></button>
+
+                <p class="login-signup">Remembered it? <a href="signup.php">Log in</a></p>
+            </div>
+        </div>
+  </section>
+
+
+<footer class="footer">
+    <div class="container p-0">
+        <div class="col">
+            <div class="d-block d-md-block d-lg-none">
+                <div class="logo-footer">
+                    <img src="img/f-brand.svg"  srcset="img/f-brand.svg" class="img-fluid">
+                    <p>
+                        Illustrated storybooks written around one child, and kept in their library.
+                    </p>
+                </div>
+            </div>
+            <div class="row row-border-one">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                    <div class="footer-nav-link">
+                        <h5>EXPLORE</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Stories</a>
+                            </li>
+                            <li>
+                                <a href="#">Create a story</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                    <div class="footer-nav-link">
+                        <h5>COMPANY</h5>
+                        <ul>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                    <div class="footer-nav-link">
+                        <h5>ACCOUNT</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Log in</a>
+                            </li>
+                            <li>
+                                <a href="#">Sign up</a>
+                            </li>
+                            <li>
+                                <a href="#">Your library</a>
+                            </li>
+                            <li>
+                                <a href="#">Your downloads</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6 col-6 d-flex d-lg-none d-md-flex">
+                    <div class="footer-nav-link">
+                        <h5>FIND US</h5>
+                        <ul>
+                            <li>
+                                <a href="">Twinkle Your Tale</a>
+                            </li>
+                            <li>
+                                <a href="">123 Somewhere Street</a>
+                            </li>
+                            <li>
+                                <a href="">City, ABC 123</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row row-border-two">
+                <div class="col-lg-7 col-sm-12 col-12 col-md-6">
+                    <div class="logo-footer d-lg-block d-md-none d-none">
+                        <img src="img/f-brand.svg"  srcset="img/f-brand.svg" class="img-fluid">
+                        <p>
+                            Illustrated storybooks written around one child, and kept in their library.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12 col-12 col-md-6">
+                    <div class="find-addres-d">
+                        <div class="footer-nav-link d-none d-lg-block d-md-none">
+                            <h5>FIND US</h5>
+                            <ul>
+                                <li>
+                                    <a href="">Twinkle Your Tale</a>
+                                </li>
+                                <li>
+                                    <a href="">123 Somewhere Street</a>
+                                </li>
+                                <li>
+                                    <a href="">City, ABC 123</a>
+                                </li>
+                            </ul>
+                        </div>
+                         <div class="footer-nav-link">
+                            <h5>WE ACCEPT</h5>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="img/visa.svg" alt="" class="img-fluid" srcset="img/visa.svg">
+                                    </a>
+                                    <a href="">
+                                        <img src="img/mastercard.svg" alt="" class="img-fluid" srcset="img/mastercard.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row row-border-three">
+                    <div class="col-lg-7 col-sm-12 col-12 col-md-6 order-lg-0 order-1 p-0">
+                        <p>© 2026 Twinkle Your Tale. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-12 col-12 col-md-6 p-0">
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+    <script src="uiframe/js/jquery.min.js"></script>
+    <script src="uiframe/js/bootstrap.bundle.min.js"></script>
+    <script src="uiframe/js/popper.min.js"></script>
+    <script src="uiframe/js/slick.js"></script>
+    <script src="uiframe/js/owl.carousel.js"></script>
+    <script src="uiframe/js/swiper-bundle.min.js"></script>
+    <script src="uiframe/js/flickity.pkgd.min.js"></script>   
+    <script src="uiframe/js/aos.js"></script>
+    <script src="./uiframe/js/home-js.js"></script>
+    <!-- Motion -->
+    <script>
+      $(document).ready(function () {
+          $(".navbar-toggler").click(function () {
+              $(this).toggleClass("is-active");
+              $("header").toggleClass("header-is-active");
+
+              let logo = $("#logo");
+              if (logo.attr("src") === "./img/m-logo.svg") {
+                  logo.attr("src", "./img/c-logo.svg");
+              } else {
+                  logo.attr("src", "./img/m-logo.svg");
+              }
+          });
+      });
+    </script>
+    <script>
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+     <script>
+        const dropdownBtns = document.querySelectorAll(
+            '.dropdown-toggle-cur, .dropdown-toggle-cart'
+        );
+
+        function updateOverlay() {
+            const anyOpen =
+                document.querySelector('.dropdown-menu.show') !== null;
+
+            document.body.classList.toggle('dropdown-open', anyOpen);
+        }
+
+        dropdownBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                setTimeout(updateOverlay, 50);
+            });
+        });
+
+        document.addEventListener('click', () => {
+            setTimeout(updateOverlay, 50);
+        });
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
+  
