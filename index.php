@@ -8,9 +8,7 @@ section{
     border: none;
 }
 </style>
-<!-- Home Page Main  -->
 <main>
-  <!-- hero -->
   <section class="hero" id="hero">
     <div class="bg is-live">
         <video autoplay muted playsinline loop preload="auto">
@@ -23,12 +21,23 @@ section{
     </div>
     <form class="create-bar" data-live action="#" data-create>
       <label class="q" for="child-name">Who is the story for?</label>
-      <div class="field name"><input id="child-name" type="text" placeholder="Theo" autocomplete="off" spellcheck="false" aria-label="Child's name"></div>
-      <div class="field select" data-select role="button" tabindex="0" aria-haspopup="listbox" aria-expanded="false" aria-label="Child's age"><span data-select-label>Age 6</span><svg aria-hidden="true" focusable="false" preserveAspectRatio="none" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g>
-<path d="M2 5L7 10L12 5" stroke="#E3AC5A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-</svg><div class="dd" role="listbox"><button type="button" role="option">Age 3</button><button type="button" role="option">Age 4</button><button type="button" role="option">Age 5</button><button type="button" role="option" aria-selected="true">Age 6</button><button type="button" role="option">Age 7</button><button type="button" role="option">Age 8</button><button type="button" role="option">Age 9</button><button type="button" role="option">Age 10</button></div></div>
+            <div class="field name"><input id="child-name" type="text" placeholder="Theo" autocomplete="off" spellcheck="false" aria-label="Child's name"></div>
+            <div class="field select" data-select role="button" tabindex="0" aria-haspopup="listbox" aria-expanded="false" aria-label="Child's age"><span data-select-label>Age 6</span><svg aria-hidden="true" focusable="false" preserveAspectRatio="none" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g>
+      <path d="M2 5L7 10L12 5" stroke="#E3AC5A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      </svg>
+<div class="dd" role="listbox">
+  <button type="button" role="option">Age 3</button>
+  <button type="button" role="option">Age 4</button>
+  <button type="button" role="option">Age 5</button>
+  <button type="button" role="option" aria-selected="true">Age 6</button>
+  <button type="button" role="option">Age 7</button>
+  <button type="button" role="option">Age 8</button>
+  <button type="button" role="option">Age 9</button>
+  <button type="button" role="option">Age 10</button>
+</div>
+</div>
       <button class="btn primary twinkle" type="submit">Begin their story <span class="arrow">→</span></button>
     </form>
   </section>
